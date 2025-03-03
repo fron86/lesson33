@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsumbit="return validation ();"  method="post">
+        <div class="name-contanier">
+            <label id="name_label" for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <span id="name_error">Please enter valid name</span>
+        </div>
+
+       
+            <div class="age-contanier">
+                <label id="age_label" for="name">age:</label>
+                <input type="text" name="age" id="age">
+                <span id="name_error">Please enter valid age</span>
+            </div>
+
+            
+                <div class="city-contanier">
+                    <label id="city_label" for="name">City:</label>
+                    <select name="city" id="city">
+                        <option value="    "selected></option>
+                        <option value="Prishtina">Prishtina</option>
+                        <option value="Skenderaj">Skenderaj</option>
+                        <option value="Llap"> Llap</option>
+                        <option value="Ferizaj">Ferizaj</option>
+                    </select>
+                    <span id="city_error">Please select a city</span>
+                </div>
+                <br>
+                <button type="sumbit" name="sumbit">Send</button>
+    </form>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
