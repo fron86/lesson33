@@ -24,7 +24,7 @@ function validation(){
             }
    }
 
-   if!(age.match(valid_age_regex)){
+   if(!(age.match(valid_age_regex))){
     document.getElementById("age_error").style.visibility="visible";
     document.getElementById("age").style.borderColor="red";
     
@@ -50,12 +50,13 @@ function validation(){
  return false;
 
 }else{
-    dovument.getElementById("name_error").syle.vissibility="hidden"
-    dovument.getElementById("name").syle.vissibility="hidden"
-    dovument.getElementById("age_error").syle.vissibility="hidden"
-    dovument.getElementById("age").syle.vissibility="hidden"
-    dovument.getElementById("city_error").syle.vissibility="hidden"
-    dovument.getElementById("city").syle.vissibility="hidden"
+    document.getElementById("name_error").syle.vissibility="hidden";
+    document.getElementById("name").syle.vissibility="black";
+    document.getElementById("age_error").syle.vissibility="hidden";
+    document.getElementById("age").syle.vissibility="black";
+    document.getElementById("city_error").syle.vissibility="hidden";
+    document.getElementById("city").syle.vissibility="black";
+    return true;
 }
 
-} 
+}
